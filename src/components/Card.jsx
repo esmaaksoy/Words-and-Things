@@ -1,22 +1,18 @@
 import "../sass/card.scss";
 import Word from "./Word";
-import { FaReadme } from "react-icons/fa6";
-const Card = ({ data }) => {
+import { data } from "../helper/data";
+const Card = () => {
   return (
     <div className="container">
-      {data.map(({ img, name,id }) => (
+      {data.map(({ img, name, id, word }) => (
         <div key={id} className="card">
-         <div className="image">
-         <img src={img} alt="" />
-         </div>
-      <div>
-      <p>{name}</p>
-          <FaReadme className="arrowDown"/>
-      </div>
-        
+          <div className="image">
+            <img src={img} alt="" />
+          </div>
+          <Word word={word} name={name} />
+          <div></div>
         </div>
       ))}
-      <Word data={data}/>
     </div>
   );
 };

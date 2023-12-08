@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <img src="img/flowers-1973875_640.webp" alt="logo" />
-      <p>WORD AND THINGS</p>
+      <p>WORDS AND THINGS</p>
     </header>
   )
 }

@@ -1,0 +1,16 @@
+@import "./variables.scss";
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.arrowDown {
+    color: $clr-white;
+font-size: 2rem;
+  }
+  
+  .name{
+    font-size: 3rem;
+  }

@@ -15,18 +15,14 @@ gap: 1rem;
   .card {
     border: 2px solid red;
     width: 60%;
-    // height: 200px;
     display: flex;
    align-items: center;
 
-    p{
-        font-size:3rem ;
-       letter-spacing: 1rem;
-    }
-    .arrowDown {
-      color: $clr-white;
-      font-size: 2rem;
-    }
- 
+img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
   }
 }
