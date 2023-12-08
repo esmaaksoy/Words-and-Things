@@ -1,0 +1,14 @@
+@import "./variables";
+header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color:$clr-grey-5;
+    img{
+        width: 100px;
+        margin-right: 2rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}

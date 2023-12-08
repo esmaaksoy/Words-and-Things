@@ -1,0 +1,8 @@
+@import "./variables";
+.container{
+ background: linear-gradient(-45deg, $clr-grey-1, $clr-grey-2,$clr-grey-3,$clr-grey-4, $clr-grey-5);
+};
+.arrowDown{
+   color:$clr-white;
+   font-size: 2rem;
+}
