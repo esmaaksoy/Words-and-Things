@@ -1,27 +1,43 @@
 @import "./variables.scss";
 @import "./mixins";
 .title {
-    @include flex(column,center,1rem,center);
+  @include flex(column, center, 1rem, center);
+  flex-wrap: wrap;
   padding: 1rem;
-  .arrow{
-    @include flex(row,center,1rem,center);
+  .arrow {
+    @include flex(row, center, 1rem, center);
     font-size: 2rem;
+    flex-wrap: wrap;
     .arrowDown {
-        color: $clr-white;
-        font-size: 2rem;
-        cursor: pointer;
-      }
-      .name {
-        font-size: 3rem;
-      }
-}
-.content {
+      color: $clr-white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .name {
+      font-size: 3rem;
+    }
+  }
+  .content {
     line-height: 1.2;
     font-weight: 600;
     font-size: 2rem;
   }
 }
 
-
-
-
+@media screen and (max-width: 800px) {
+    .title {
+        flex-wrap: wrap;
+        padding: 1rem;
+        .arrow {
+          font-size: 1.5rem;
+          
+         
+        }
+        .content {
+      
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+  
+}

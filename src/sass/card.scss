@@ -2,6 +2,8 @@
 @import "./mixins";
 .container {
   @include flex(column,flex-start,1rem,center);
+
+  padding: 2rem;
   background: linear-gradient(
     -45deg,
     $clr-grey-1,
@@ -14,12 +16,29 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 60%;
     @include flex(row,space-between,0.1rem,center);
+    flex-wrap: wrap;
     padding: 2rem;
     img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
+      filter: grayscale(100%);
     }
   }
 }
+
+@media screen and (max-width:800px){
+  .container {
+    padding: 1rem;
+    .card {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      padding: 0.2rem;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  }

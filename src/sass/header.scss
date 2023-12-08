@@ -12,3 +12,12 @@ header{
         font-size: 2rem;
     }
 }
+@media screen and (max-width:800px){
+    header{
+        padding: 0.5rem;
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    
+    }
