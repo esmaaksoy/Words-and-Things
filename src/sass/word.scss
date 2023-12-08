@@ -1,16 +1,27 @@
 @import "./variables.scss";
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+@import "./mixins";
+.title {
+    @include flex(column,center,1rem,center);
+  padding: 1rem;
+  .arrow{
+    @include flex(row,center,1rem,center);
+    font-size: 2rem;
+    .arrowDown {
+        color: $clr-white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .name {
+        font-size: 3rem;
+      }
 }
-.arrowDown {
-    color: $clr-white;
-font-size: 2rem;
+.content {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 2rem;
   }
-  
-  .name{
-    font-size: 3rem;
-  }
+}
+
+
+
+

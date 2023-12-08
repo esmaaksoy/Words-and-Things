@@ -1,9 +1,7 @@
 @import "./variables";
+@import "./mixins";
 .container {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 1rem;
+  @include flex(column,flex-start,1rem,center);
   background: linear-gradient(
     -45deg,
     $clr-grey-1,
@@ -13,16 +11,15 @@ gap: 1rem;
     $clr-grey-5
   );
   .card {
-    border: 2px solid red;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 60%;
-    display: flex;
-   align-items: center;
-
-img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    @include flex(row,space-between,0.1rem,center);
+    padding: 2rem;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
 }

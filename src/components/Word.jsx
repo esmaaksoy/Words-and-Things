@@ -1,25 +1,28 @@
 import { useState } from "react";
 import "../sass/word.scss"
 import {
-  IoArrowDownCircleOutline,
-  IoArrowUpCircleOutline,
-} from "react-icons/io5";
-const Word = ({ name, word }) => {
+  CiCircleMinus ,
+  CiCirclePlus,
+} from "react-icons/ci";
+const Word = ({ name, word}) => {
   const [show, setShow] = useState(false);
   return (
     <div className="title">
-      {show ? <p className="content">{word}</p> : <p className="name">{name}</p>}
-      {show ? (
-        <IoArrowUpCircleOutline
+      <div className="arrow">
+        <h4>{name}</h4>
+        {show ? (
+        <CiCircleMinus
           className="arrowDown"
           onClick={() => setShow(!show)}
         />
       ) : (
-        <IoArrowDownCircleOutline
+        <CiCirclePlus 
           className="arrowDown"
           onClick={() => setShow(!show)}
         />
       )}
+      </div>
+      {show && <p className="content">{word}</p>}
     </div>
   );
 };
