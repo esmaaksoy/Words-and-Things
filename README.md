@@ -1,5 +1,5 @@
 # Words and Things
-This project is a website created using React and SASS and React-icons.
+This project is a website created using React,SASS and React-icons.
 
 ## Screenshots
 ![Project snapshot](./words-and-things.gif) 
