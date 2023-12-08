@@ -1,9 +1,12 @@
 
 
-const Word = () => {
+const Word = ({data}) => {
   return (
     <div>
-      
+      {data.map(({word})=>
+      (
+        <p>{word}</p>
+      ))}
     </div>
   )
 }

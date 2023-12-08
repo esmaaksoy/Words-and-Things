@@ -1,8 +1,32 @@
 @import "./variables";
-.container{
- background: linear-gradient(-45deg, $clr-grey-1, $clr-grey-2,$clr-grey-3,$clr-grey-4, $clr-grey-5);
-};
-.arrowDown{
-   color:$clr-white;
-   font-size: 2rem;
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+  background: linear-gradient(
+    -45deg,
+    $clr-grey-1,
+    $clr-grey-2,
+    $clr-grey-3,
+    $clr-grey-4,
+    $clr-grey-5
+  );
+  .card {
+    border: 2px solid red;
+    width: 60%;
+    // height: 200px;
+    display: flex;
+   align-items: center;
+
+    p{
+        font-size:3rem ;
+       letter-spacing: 1rem;
+    }
+    .arrowDown {
+      color: $clr-white;
+      font-size: 2rem;
+    }
+ 
+  }
 }
